@@ -61,7 +61,8 @@ var svg = d3.select("body")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("data1.csv", function(error, data) {
+d3.csv("https://s3.amazonaws.com/wenis/data/weight/2015-09-09.csv", function(error, data) {
+//d3.csv("data1.csv", function(error, data) {
 // d3.csv("data.csv", function(error, data) {
     data.forEach(function(d) {
         d.date = parseDate(d.date);
